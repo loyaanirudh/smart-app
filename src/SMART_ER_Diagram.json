@@ -1,0 +1,727 @@
+{
+    "System Master": [
+        {
+            "System": "Settlement System",
+            "Description": "Settlement System"
+        },
+        {
+            "System": "Collateral Management",
+            "Description": "Collateral Management System"
+        },
+        {
+            "System": "Corporate Actions",
+            "Description": "Corporate Actions System"
+        },
+        {
+            "System": "Financial Reporting",
+            "Description": "Financial Reporting System"
+        },
+        {
+            "System": "OTC Middle Office",
+            "Description": "OTC Middle Office System"
+        }
+    ],
+    "Super Admin": [
+        {
+            "System": "Settlement System",
+            "Admin": "Vijesh Gopinath"
+        },
+        {
+            "System": "Settlement System",
+            "Admin": "Mihir Vaidya"
+        },
+        {
+            "System": "Collateral Management",
+            "Admin": "Ravi Shah"
+        },
+        {
+            "System": "Collateral Management",
+            "Admin": "Devesh Joshi"
+        },
+        {
+            "System": "Corporate Actions",
+            "Admin": "Ravi Shah"
+        },
+        {
+            "System": "Corporate Actions",
+            "Admin": "Chirag Shah"
+        },
+        {
+            "System": "Corporate Actions",
+            "Admin": "Vijesh Gopinath"
+        },
+        {
+            "System": "OTC Middle Office",
+            "Admin": "Chirag Shah"
+        },
+        {
+            "System": "OTC Middle Office",
+            "Admin": "Anirudh Loya"
+        }
+    ],
+    "Task Definition": [
+        {
+            "System": "Settlement System",
+            "Product": "FX",
+            "Subproduct": "JPY",
+            "Task Type": null,
+            "Time Zone": "IST",
+            "Cut-off Time": 1200,
+            "Task Creation": "External System",
+            "if Automatic - Frequency": null,
+            "If Automatic - Creation Time": null,
+            "Task Status Update Flag": "Fed from Upstream",
+            "Pre-Allocation Override Allowed": "Yes",
+            "Post-Allocation Override Allowed": "Yes"
+        },
+        {
+            "System": "Settlement System",
+            "Product": "FX",
+            "Subproduct": "EUR",
+            "Task Type": null,
+            "Time Zone": "IST",
+            "Cut-off Time": 1500,
+            "Task Creation": "External System",
+            "if Automatic - Frequency": null,
+            "If Automatic - Creation Time": null,
+            "Task Status Update Flag": "Fed from Upstream",
+            "Pre-Allocation Override Allowed": "Yes",
+            "Post-Allocation Override Allowed": "Yes"
+        },
+        {
+            "System": "Settlement System",
+            "Product": "Cash Equities",
+            "Subproduct": "GBP",
+            "Task Type": null,
+            "Time Zone": "IST",
+            "Cut-off Time": 1600,
+            "Task Creation": "External System",
+            "if Automatic - Frequency": null,
+            "If Automatic - Creation Time": null,
+            "Task Status Update Flag": "Fed from Upstream",
+            "Pre-Allocation Override Allowed": "Yes",
+            "Post-Allocation Override Allowed": "Yes"
+        },
+        {
+            "System": "Collateral Management",
+            "Product": "Collateral",
+            "Subproduct": "NIP",
+            "Task Type": "Demand Call",
+            "Time Zone": "IST",
+            "Cut-off Time": 1600,
+            "Task Creation": "External System",
+            "if Automatic - Frequency": null,
+            "If Automatic - Creation Time": null,
+            "Task Status Update Flag": "Fed from Upstream",
+            "Pre-Allocation Override Allowed": "Yes",
+            "Post-Allocation Override Allowed": "Yes"
+        },
+        {
+            "System": "Financial Reporting",
+            "Product": null,
+            "Subproduct": null,
+            "Task Type": "Pre-work",
+            "Time Zone": "IST",
+            "Cut-off Time": 2359,
+            "Task Creation": "Automatic",
+            "if Automatic - Frequency": "Second last working day of every quarter",
+            "If Automatic - Creation Time": 900,
+            "Task Status Update Flag": "Manually Entered",
+            "Pre-Allocation Override Allowed": "Yes",
+            "Post-Allocation Override Allowed": "Yes"
+        }
+    ],
+    "Resource Defnition": [
+        {
+            "Resource Name": "Srikanth Gopal",
+            "Resource Role": "Team Member",
+            "Working Hours From": "0600",
+            "Working Hours To": 1500,
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "75%",
+            "Date From": "01-Jan-22",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Rohit Verma",
+            "Resource Role": "Team Member",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "15-Oct-21",
+            "Date To": "10-Jun-22"
+        },
+        {
+            "Resource Name": "Rohit Verma",
+            "Resource Role": "Team Member",
+            "Working Hours From": "1400",
+            "Working Hours To": "2300",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "11-Jun-22",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Vijesh Gopinath",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "02-Jun-17",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Mihir Vaidya",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Ravi Shah",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Devesh Joshi",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Ravi Shah",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Chirag Shah",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Vijesh Gopinath",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "Yes",
+            "Works Friday": "Yes",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Chirag Shah",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "No",
+            "Works Friday": "No",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        },
+        {
+            "Resource Name": "Anirudh Loya",
+            "Resource Role": "Team Leader",
+            "Working Hours From": "0900",
+            "Working Hours To": "1800",
+            "Time zone": "IST",
+            "Works Monday": "Yes",
+            "Works Tuesday": "Yes",
+            "Works Wednesday": "Yes",
+            "Works Thursday": "No",
+            "Works Friday": "No",
+            "Max Allowable Utilization %age": "100%",
+            "Date From": "01-Jan-20",
+            "Date To": null
+        }
+    ],
+    "Resource Skills Matrix": [
+        {
+            "Resource Name": "Srikanth Gopal",
+            "System": "Settlement System",
+            "Product ": "FX",
+            "Subproduct": null,
+            "Task Type": null,
+            "Task Throughput \/ Day (8 hours)": 1000,
+            "Experience in months": 96,
+            "Priority of the task": 1,
+            "Task Status": "Active",
+            "Last Updated Productivity": "10-Apr-22",
+            "Source of Last Updated Produtivity": "SMART Algorithm",
+            "Column12": null,
+            "Audit Trail View of Productivity Updates with the same columns also available": null
+        },
+        {
+            "Resource Name": "Rohit Verma",
+            "System": "Collateral Management",
+            "Product ": null,
+            "Subproduct": null,
+            "Task Type": null,
+            "Task Throughput \/ Day (8 hours)": 75,
+            "Experience in months": 72,
+            "Priority of the task": 1,
+            "Task Status": "Active",
+            "Last Updated Productivity": "10-Apr-22",
+            "Source of Last Updated Produtivity": "SMART Algorithm with Manual Override",
+            "Column12": null,
+            "Audit Trail View of Productivity Updates with the same columns also available": null
+        },
+        {
+            "Resource Name": "Srikanth Gopal",
+            "System": "Collateral Management",
+            "Product ": "Collateral",
+            "Subproduct": "NIP",
+            "Task Type": "Demand Call",
+            "Task Throughput \/ Day (8 hours)": 25,
+            "Experience in months": 24,
+            "Priority of the task": 2,
+            "Task Status": "Active",
+            "Last Updated Productivity": "15-Feb-22",
+            "Source of Last Updated Produtivity": "Manual",
+            "Column12": null,
+            "Audit Trail View of Productivity Updates with the same columns also available": null
+        },
+        {
+            "Resource Name": "Srikanth Gopal",
+            "System": "Settlement System",
+            "Product ": "Cash EQ",
+            "Subproduct": null,
+            "Task Type": null,
+            "Task Throughput \/ Day (8 hours)": 400,
+            "Experience in months": 72,
+            "Priority of the task": 1,
+            "Task Status": "Active",
+            "Last Updated Productivity": null,
+            "Source of Last Updated Produtivity": null,
+            "Column12": null,
+            "Audit Trail View of Productivity Updates with the same columns also available": null
+        },
+        {
+            "Resource Name": "Rohit Verma",
+            "System": "Settlement System",
+            "Product ": "Cash EQ",
+            "Subproduct": null,
+            "Task Type": null,
+            "Task Throughput \/ Day (8 hours)": 250,
+            "Experience in months": 48,
+            "Priority of the task": null,
+            "Task Status": "Inactive",
+            "Last Updated Productivity": null,
+            "Source of Last Updated Produtivity": null,
+            "Column12": null,
+            "Audit Trail View of Productivity Updates with the same columns also available": null
+        }
+    ],
+    "Leave": [
+        {
+            "Resource Name": "Vjesh Gopinath",
+            "Date From": "15-Jun-22",
+            "Date To": "17-Jun-22",
+            "Source": "Leave System",
+            "Category": "Planned"
+        },
+        {
+            "Resource Name": "Mihir Vaidya",
+            "Date From": "26-May-22",
+            "Date To": "26-May-22",
+            "Source": "Manual",
+            "Category": "Ad-hoc"
+        },
+        {
+            "Resource Name": "Ravi Shah",
+            "Date From": "18-Jul-22",
+            "Date To": "22-Jul-22",
+            "Source": "Manual",
+            "Category": "Planned"
+        }
+    ],
+    "Prediction Module": [],
+    "Allocation Module": [
+        {
+            "Task-level View": "System",
+            "Column2": "Product",
+            "Column3": "Subproduct",
+            "Column4": "Task Type",
+            "Column5": "Task ID",
+            "Column6": "Status",
+            "Column7": "Completion Status",
+            "Column8": "Resource Name",
+            "Column9": "Time zone",
+            "Column10": "Allocation Time",
+            "Column11": "Completion Time"
+        },
+        {
+            "Task-level View": "Settlement System",
+            "Column2": "FX",
+            "Column3": "JPY",
+            "Column4": null,
+            "Column5": "GL1002",
+            "Column6": "Pre-Allocation",
+            "Column7": "Not Complete",
+            "Column8": "Vijesh Gopinath",
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Settlement System",
+            "Column2": "FX",
+            "Column3": "JPY",
+            "Column4": null,
+            "Column5": "GL1000",
+            "Column6": "Allocated",
+            "Column7": "Complete",
+            "Column8": "Vijesh Gopinath",
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Settlement System",
+            "Column2": "FX ",
+            "Column3": "GBP",
+            "Column4": null,
+            "Column5": "GL1003",
+            "Column6": "Post-Allocation",
+            "Column7": "Not Complete",
+            "Column8": "Srikanth Gopal",
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Collateral Management",
+            "Column2": "Collateral",
+            "Column3": "NIP",
+            "Column4": "Demand Call",
+            "Column5": "CR101",
+            "Column6": "Re-allocated",
+            "Column7": "Not Complete",
+            "Column8": "Srikanth Gopal",
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": null,
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        null,
+        null,
+        {
+            "Task-level View": "Action Buttons to (1) Trigger Allocation Program, (2) Update Allocations, (3) Release, etc. ",
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        null,
+        {
+            "Task-level View": "Aggregated View per resource",
+            "Column2": null,
+            "Column3": null,
+            "Column4": null,
+            "Column5": null,
+            "Column6": null,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Resource Name",
+            "Column2": "System",
+            "Column3": "Product",
+            "Column4": "Subproduct",
+            "Column5": "Task Type",
+            "Column6": "Count",
+            "Column7": "Aggregated Utilization %",
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Srikanth Gopal",
+            "Column2": "Gloss",
+            "Column3": "FX ",
+            "Column4": "GBP",
+            "Column5": null,
+            "Column6": 500,
+            "Column7": 0.7,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        },
+        {
+            "Task-level View": "Srikanth Gopal",
+            "Column2": "Crome",
+            "Column3": "Collateral",
+            "Column4": "NIP",
+            "Column5": "Demand Call",
+            "Column6": 5,
+            "Column7": null,
+            "Column8": null,
+            "Column9": null,
+            "Column10": null,
+            "Column11": null
+        }
+    ],
+    "Dashboard": [
+        {
+            "Resource Productivty": "On a per system basis (i.e., for each system that the resource is skilled in) - avg. actual productivty vs. estimated productivity shown as trends, along with comparison of team productivity and years of experience"
+        },
+        null,
+        {
+            "Resource Productivty": "Volume Trends"
+        },
+        {
+            "Resource Productivty": "For each System, Product and Subproduct"
+        },
+        null,
+        {
+            "Resource Productivty": "SLA Breaches"
+        },
+        {
+            "Resource Productivty": "Per resource, per team, per System, Product and Subproduct shown as trends data"
+        }
+    ]
+}

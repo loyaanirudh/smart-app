@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Master from './components/Master';
+import SystemMaster from './components/SystemMaster';
 import Header from './Header';
 import reportWebVitals from './reportWebVitals';
 
@@ -13,7 +13,7 @@ root.render(
   <Router>
     <Header />
     <Routes>
-      <Route path="/master" element={<Master />} />
+      <Route path="/master" element={<SystemMaster />} />
     </Routes>
   </Router>
 );

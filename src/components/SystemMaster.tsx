@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button, Col, Container, FloatingLabel, Form, Modal, Row, Table } from 'react-bootstrap';
 import data from '../SMART_ER_Diagram.json';
 
-const Master = () => {
+const SystemMaster = () => {
 
   const [values, setValues] = useState({
     System: '',
@@ -93,4 +93,4 @@ const Master = () => {
   )
 };
 
-export default Master;
+export default SystemMaster;

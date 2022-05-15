@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ResourceDefinition from './components/ResourceDefinition';
+import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
 import SuperAdmin from './components/SuperAdmin';
 import SystemMaster from './components/SystemMaster';
 import TaskDefinition from './components/TaskDefinition';
@@ -20,6 +21,7 @@ root.render(
       <Route path="/superAdmin" element={<SuperAdmin />} />
       <Route path="/taskDefinition" element={<TaskDefinition />} />
       <Route path="/resourceDefinition" element={<ResourceDefinition />} />
+      <Route path="/resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
     </Routes>
   </Router>
 );

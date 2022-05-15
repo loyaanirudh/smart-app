@@ -349,75 +349,76 @@
   "Id": 1,
   "ResourceName": "Srikanth Gopal",
   "System": "Settlement System",
-  "Product ": "FX",
+  "Product": "FX",
   "Subproduct": null,
   "TaskType": null,
   "TaskThroughput": 1000,
   "Experience": 96,
   "TaskPriority": 1,
   "TaskStatus": "Active",
-  "LastUpdated Productivity": "10-Apr-22",
-  "Source of Last Updated Produtivity": "SMART Algorithm"
+  "LastUpdatedProductivity": "10-Apr-22",
+  "SourceOfLastUpdatedProdutivity": "SMART Algorithm"
  },
  {
   "Id": 2,
   "ResourceName": "Rohit Verma",
   "System": "Collateral Management",
-  "Product ": null,
+  "Product": null,
   "Subproduct": null,
   "TaskType": null,
   "TaskThroughput": 75,
   "Experience": 72,
   "TaskPriority": 1,
   "TaskStatus": "Active",
-  "LastUpdated Productivity": "10-Apr-22",
-  "Source of Last Updated Produtivity": "SMART Algorithm with Manual Override"
+  "LastUpdatedProductivity": "10-Apr-22",
+  "SourceOfLastUpdatedProdutivity": "SMART Algorithm with Manual Override"
  },
  {
   "Id": 3,
   "ResourceName": "Srikanth Gopal",
   "System": "Collateral Management",
-  "Product ": "Collateral",
+  "Product": "Collateral",
   "Subproduct": "NIP",
   "TaskType": "Demand Call",
   "TaskThroughput": 25,
   "Experience": 24,
   "TaskPriority": 2,
   "TaskStatus": "Active",
-  "LastUpdated Productivity": "15-Feb-22",
-  "Source of Last Updated Produtivity": "Manual"
+  "LastUpdatedProductivity": "15-Feb-22",
+  "SourceOfLastUpdatedProdutivity": "Manual"
  },
  {
   "Id": 4,
   "ResourceName": "Srikanth Gopal",
   "System": "Settlement System",
-  "Product ": "Cash EQ",
+  "Product": "Cash EQ",
   "Subproduct": null,
   "TaskType": null,
   "TaskThroughput": 400,
   "Experience": 72,
   "TaskPriority": 1,
   "TaskStatus": "Active",
-  "LastUpdated Productivity": null,
-  "Source of Last Updated Produtivity": null
+  "LastUpdatedProductivity": null,
+  "SourceOfLastUpdatedProdutivity": null
  },
  {
   "Id": 5,
   "ResourceName": "Rohit Verma",
   "System": "Settlement System",
-  "Product ": "Cash EQ",
+  "Product": "Cash EQ",
   "Subproduct": null,
   "TaskType": null,
   "TaskThroughput": 250,
   "Experience": 48,
   "TaskPriority": null,
   "TaskStatus": "Inactive",
-  "LastUpdated Productivity": null,
-  "Source of Last Updated Produtivity": null
+  "LastUpdatedProductivity": null,
+  "SourceOfLastUpdatedProdutivity": null
  }
 ],
 "Leave":[
  {
+  "Id": 1,
   "Resource Name": "Vjesh Gopinath",
   "Date From": "15-Jun-22",
   "Date To": "17-Jun-22",
@@ -425,6 +426,7 @@
   "Category": "Planned"
  },
  {
+  "Id": 2,
   "Resource Name": "Mihir Vaidya",
   "Date From": "26-May-22",
   "Date To": "26-May-22",
@@ -432,6 +434,7 @@
   "Category": "Ad-hoc"
  },
  {
+  "Id": 3,
   "Resource Name": "Ravi Shah",
   "Date From": "18-Jul-22",
   "Date To": "22-Jul-22",

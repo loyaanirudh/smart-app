@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SuperAdmin from './components/SuperAdmin';
 import SystemMaster from './components/SystemMaster';
+import TaskDefinition from './components/TaskDefinition';
 import Header from './Header';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ root.render(
     <Routes>
       <Route path="/systemMaster" element={<SystemMaster />} />
       <Route path="/superAdmin" element={<SuperAdmin />} />
+      <Route path="/taskDefinition" element={<TaskDefinition />} />
     </Routes>
   </Router>
 );

@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SuperAdmin from './components/SuperAdmin';
 import SystemMaster from './components/SystemMaster';
 import Header from './Header';
 import reportWebVitals from './reportWebVitals';
@@ -13,7 +14,8 @@ root.render(
   <Router>
     <Header />
     <Routes>
-      <Route path="/master" element={<SystemMaster />} />
+      <Route path="/systemMaster" element={<SystemMaster />} />
+      <Route path="/superAdmin" element={<SuperAdmin />} />
     </Routes>
   </Router>
 );

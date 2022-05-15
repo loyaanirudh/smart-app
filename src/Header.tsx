@@ -6,8 +6,8 @@ function Header() {
       <Container  className='float-start'>
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         <Nav className="justify-content">
-          <Nav.Link href="/master">System Master</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
+          <Nav.Link href="/systemMaster">System Master</Nav.Link>
+          <Nav.Link href="/superAdmin">Super Admin</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
         </Nav>
       </Container>

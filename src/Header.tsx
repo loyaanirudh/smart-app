@@ -11,6 +11,7 @@ function Header() {
           <Nav.Link href="/taskDefinition">Task Definition</Nav.Link>
           <Nav.Link href="/resourceDefinition">Resource Definition</Nav.Link>
           <Nav.Link href="/resourceSkillsMatrix">Resource Skills Matrix</Nav.Link>
+          <Nav.Link href="/leave">Leave</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

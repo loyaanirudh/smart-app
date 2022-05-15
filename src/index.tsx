@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Leave from './components/Leave';
 import ResourceDefinition from './components/ResourceDefinition';
 import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
 import SuperAdmin from './components/SuperAdmin';
@@ -22,6 +23,7 @@ root.render(
       <Route path="/taskDefinition" element={<TaskDefinition />} />
       <Route path="/resourceDefinition" element={<ResourceDefinition />} />
       <Route path="/resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
+      <Route path="/leave" element={<Leave />} />
     </Routes>
   </Router>
 );

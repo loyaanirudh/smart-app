@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, FloatingLabel, Form, Modal, Row, Table } from 'react-bootstrap';
 import { restHelper } from './_helper';
-import data1 from '../SMART_ER_Diagram.json'
 
 const ResourceDefinition = () => {
 

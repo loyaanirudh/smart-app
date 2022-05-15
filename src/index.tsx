@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './components/Home';
 import Leave from './components/Leave';
 import ResourceDefinition from './components/ResourceDefinition';
 import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
@@ -17,14 +19,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <Router>
     <Header />
-    <Routes>
-      <Route path="/systemMaster" element={<SystemMaster />} />
-      <Route path="/superAdmin" element={<SuperAdmin />} />
-      <Route path="/taskDefinition" element={<TaskDefinition />} />
-      <Route path="/resourceDefinition" element={<ResourceDefinition />} />
-      <Route path="/resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
-      <Route path="/leave" element={<Leave />} />
-    </Routes>
+      <Routes>
+        <Route path="/systemMaster" element={<SystemMaster />} />
+        <Route path="/superAdmin" element={<SuperAdmin />} />
+        <Route path="/taskDefinition" element={<TaskDefinition />} />
+        <Route path="/resourceDefinition" element={<ResourceDefinition />} />
+        <Route path="/resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
+        <Route path="/leave" element={<Leave />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
   </Router>
 );
 

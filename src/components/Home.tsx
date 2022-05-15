@@ -57,10 +57,10 @@ const Home = () => {
     return (
         <Container fluid>
             <Row className="mt-2">
-                <Col md="11" />
-                <Col md="1">
+                <Col md="10" />
+                <Col md="2">
                     <Button className="float-end" variant="outline-primary" onClick={handleShow}>
-                        Calculate
+                        Trigger Allocation
                     </Button>
                 </Col>
             </Row>

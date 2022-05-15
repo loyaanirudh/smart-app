@@ -7,6 +7,7 @@ const TaskDefinition = () => {
     const endpointurl = 'TaskDefinition'
     const api = restHelper()
     const [data, setData] = useState([])
+    const [systemData, setSystemData] = useState([])
 
 
     const getdata = () => {
@@ -15,9 +16,23 @@ const TaskDefinition = () => {
             .catch(err => console.log(err))
     }
 
+    const getSystemData = () => {
+        api.get('SystemMaster')
+            .then(setSystemData)
+            .catch(err => console.log(err))
+    }
+
     useEffect(() => {
         getdata()
+        getSystemData()
     }, [])
+
+    const SystemData = systemData.map((info: any) => {
+        return (
+            <option value={info.Id}>{info.System}</option>
+        )
+    }
+    )
 
     const [values, setValues] = useState({
         System: '',
@@ -59,6 +74,7 @@ const TaskDefinition = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const handleSave = () => {
+        console.log(values)
         api.postCreate(endpointurl, { body: values })
             .then(getdata)
             .catch(err => console.log(err))
@@ -68,6 +84,12 @@ const TaskDefinition = () => {
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValues({ ...values, [event.target.name]: event.target.value });
     };
+
+    const onSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        var index = event.target.selectedIndex;
+        var textValue: any = event.target[index].innerText
+        setValues({ ...values, [event.target.name]: textValue });
+    }
 
     return (
         <Container fluid>
@@ -105,25 +127,120 @@ const TaskDefinition = () => {
                 </Col>
             </Row>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose} size="xl">
                 <Modal.Header closeButton>
                     <Modal.Title>Add Master</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
-                        <FloatingLabel
-                            controlId="system"
-                            label="System"
-                            className="mb-3">
-                            <Form.Control type="text" name="System" onChange={onChange} placeholder="Enter System" />
-                        </FloatingLabel>
+                        <Row>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="system"
+                                    label="System"
+                                    className="mb-3">
+                                    <Form.Select name="System" id='System' aria-label="Enter System" onChange={onSelect}>
+                                        <option>Select System</option>
+                                        {SystemData}
+                                    </Form.Select>
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="product"
+                                    label="Product"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="Product" onChange={onChange} placeholder="Enter Product" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="Subproduct"
+                                    label="Subproduct"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="Subproduct" onChange={onChange} placeholder="Enter Sub Product" />
+                                </FloatingLabel>
+                            </Col>
+                        </Row>
 
-                        <FloatingLabel
-                            controlId="admin"
-                            label="Admin"
-                            className="mb-3">
-                            <Form.Control type="text" name="Admin" onChange={onChange} placeholder="Enter Admin" />
-                        </FloatingLabel>
+                        <Row>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="TaskType"
+                                    label="TaskType"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="TaskType" onChange={onChange} placeholder="Enter Task Type" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="TimeZone"
+                                    label="TimeZone"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="TimeZone" onChange={onChange} placeholder="Enter Time Zone" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="CutOffTime"
+                                    label="CutOffTime"
+                                    className="mb-3">
+                                    <Form.Control type="number" name="CutOffTime" onChange={onChange} placeholder="Enter Cut-Off Time" />
+                                </FloatingLabel>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="TaskCreation"
+                                    label="TaskCreation"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="TaskCreation" onChange={onChange} placeholder="Enter Task Creation" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="Frequency"
+                                    label="Frequency"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="Frequency" onChange={onChange} placeholder="Enter Frequency" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="CreationTime"
+                                    label="CreationTime"
+                                    className="mb-3">
+                                    <Form.Control type="number" name="CreationTime" onChange={onChange} placeholder="Enter Creation Time" />
+                                </FloatingLabel>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="TaskStatusUpdateFlag"
+                                    label="TaskStatusUpdateFlag"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="TaskStatusUpdateFlag" onChange={onChange} placeholder="Enter Task Status Update Flag" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="PreAllocationOverride"
+                                    label="PreAllocationOverride"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="PreAllocationOverride" onChange={onChange} placeholder="Enter Pre-Allocation Override" />
+                                </FloatingLabel>
+                            </Col>
+                            <Col md="4">
+                                <FloatingLabel
+                                    controlId="PostAllocationOverride"
+                                    label="PostAllocationOverride"
+                                    className="mb-3">
+                                    <Form.Control type="text" name="PostAllocationOverride" onChange={onChange} placeholder="Enter Post-Allocation Override" />
+                                </FloatingLabel>
+                            </Col>
+                        </Row>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>

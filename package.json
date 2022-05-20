@@ -1,6 +1,7 @@
 {
   "name": "smart-app",
   "version": "0.1.0",
+  "homepage": "https://loyanirudh.github.io/smart-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -21,8 +22,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "json-server": "json-server --watch data.json --port 5000 --id Id",
-    "dev": "concurrently \"npm start\" \"npm run json-server\"",
+    "server": "json-server --watch db.json --port 5000 --id Id",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

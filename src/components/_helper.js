@@ -1,4 +1,4 @@
-const url = 'http://localhost:5000/'
+const url = 'https://qogq3stkwd.execute-api.ap-south-1.amazonaws.com/dev/api/'
 
 export const restHelper = () => {
 

@@ -1,7 +1,6 @@
 {
   "name": "smart-app",
   "version": "0.1.0",
-  "homepage": "https://loyanirudh.github.io/smart-app",
   "private": true,
   "dependencies": {
     "@types/jest": "^27.5.1",
@@ -9,7 +8,6 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "bootstrap": "^5.1.3",
-    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
@@ -18,10 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server": "json-server --watch db.json --port 5000 --id Id",
+    "server": "json-server --watch db.json --port 5000",
     "dev": "concurrently \"npm start\" \"npm run server\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

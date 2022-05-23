@@ -1,86 +1,86 @@
 {
   "SystemMaster": [
     {
-      "Id": 1,
+      "id": 1,
       "System": "Settlement System",
       "Description": "Settlement System"
     },
     {
-      "Id": 2,
+      "id": 2,
       "System": "Collateral Management",
       "Description": "Collateral Management System"
     },
     {
-      "Id": 3,
+      "id": 3,
       "System": "Corporate Actions",
       "Description": "Corporate Actions System"
     },
     {
-      "Id": 4,
+      "id": 4,
       "System": "Financial Reporting",
       "Description": "Financial Reporting System"
     },
     {
-      "Id": 5,
+      "id": 5,
       "System": "OTC Middle Office",
       "Description": "OTC Middle Office System"
     },
     {
       "System": "Test",
       "Description": "Test",
-      "Id": 6
+      "id": 6
     }
   ],
   "SuperAdmin": [
     {
-      "Id": 1,
+      "id": 1,
       "System": "Settlement System",
       "Admin": "Vijesh Gopinath"
     },
     {
-      "Id": 2,
+      "id": 2,
       "System": "Settlement System",
       "Admin": "Mihir Vaidya"
     },
     {
-      "Id": 3,
+      "id": 3,
       "System": "Collateral Management",
       "Admin": "Ravi Shah"
     },
     {
-      "Id": 4,
+      "id": 4,
       "System": "Collateral Management",
       "Admin": "Devesh Joshi"
     },
     {
-      "Id": 5,
+      "id": 5,
       "System": "Corporate Actions",
       "Admin": "Ravi Shah"
     },
     {
-      "Id": 6,
+      "id": 6,
       "System": "Corporate Actions",
       "Admin": "Chirag Shah"
     },
     {
-      "Id": 7,
+      "id": 7,
       "System": "Corporate Actions",
       "Admin": "Vijesh Gopinath"
     },
     {
-      "Id": 8,
+      "id": 8,
       "System": "OTC Middle Office",
       "Admin": "Chirag Shah"
     },
     {
-      "Id": 9,
+      "id": 9,
       "System": "OTC Middle Office",
       "Admin": "Anirudh Loya"
     }
   ],
   "TaskDefinition": [
     {
-      "Id": 1,
+      "id": 1,
       "System": "Settlement System",
       "Product": "FX",
       "Subproduct": "JPY",
@@ -95,7 +95,7 @@
       "PostAllocationOverride": "Yes"
     },
     {
-      "Id": 2,
+      "id": 2,
       "System": "Settlement System",
       "Product": "FX",
       "Subproduct": "EUR",
@@ -110,7 +110,7 @@
       "PostAllocationOverride": "Yes"
     },
     {
-      "Id": 3,
+      "id": 3,
       "System": "Settlement System",
       "Product": "Cash Equities",
       "Subproduct": "GBP",
@@ -125,7 +125,7 @@
       "PostAllocationOverride": "Yes"
     },
     {
-      "Id": 4,
+      "id": 4,
       "System": "Collateral Management",
       "Product": "Collateral",
       "Subproduct": "NIP",
@@ -140,7 +140,7 @@
       "PostAllocationOverride": "Yes"
     },
     {
-      "Id": 5,
+      "id": 5,
       "System": "Financial Reporting",
       "Product": null,
       "Subproduct": null,
@@ -157,7 +157,7 @@
   ],
   "ResourceDefnition": [
     {
-      "Id": 1,
+      "id": 1,
       "ResourceName": "Srikanth Gopal",
       "ResourceRole": "Team Member",
       "WorkingHoursFrom": "0600",
@@ -173,7 +173,7 @@
       "DateTo": null
     },
     {
-      "Id": 2,
+      "id": 2,
       "ResourceName": "Rohit Verma",
       "ResourceRole": "Team Member",
       "WorkingHoursFrom": "0900",
@@ -189,7 +189,7 @@
       "DateTo": "10-Jun-22"
     },
     {
-      "Id": 3,
+      "id": 3,
       "ResourceName": "Rohit Verma",
       "ResourceRole": "Team Member",
       "WorkingHoursFrom": "1400",
@@ -205,7 +205,7 @@
       "DateTo": null
     },
     {
-      "Id": 4,
+      "id": 4,
       "ResourceName": "Vijesh Gopinath",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -221,7 +221,7 @@
       "DateTo": null
     },
     {
-      "Id": 5,
+      "id": 5,
       "ResourceName": "Mihir Vaidya",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -237,7 +237,7 @@
       "DateTo": null
     },
     {
-      "Id": 6,
+      "id": 6,
       "ResourceName": "Ravi Shah",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -253,7 +253,7 @@
       "DateTo": null
     },
     {
-      "Id": 7,
+      "id": 7,
       "ResourceName": "Devesh Joshi",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -269,7 +269,7 @@
       "DateTo": null
     },
     {
-      "Id": 8,
+      "id": 8,
       "ResourceName": "Ravi Shah",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -285,7 +285,7 @@
       "DateTo": null
     },
     {
-      "Id": 9,
+      "id": 9,
       "ResourceName": "Chirag Shah",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -301,7 +301,7 @@
       "DateTo": null
     },
     {
-      "Id": 10,
+      "id": 10,
       "ResourceName": "Vijesh Gopinath",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -317,7 +317,7 @@
       "DateTo": null
     },
     {
-      "Id": 11,
+      "id": 11,
       "ResourceName": "Chirag Shah",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -333,7 +333,7 @@
       "DateTo": null
     },
     {
-      "Id": 12,
+      "id": 12,
       "ResourceName": "Anirudh Loya",
       "ResourceRole": "Team Leader",
       "WorkingHoursFrom": "0900",
@@ -351,7 +351,7 @@
   ],
   "ResourceSkillsMatrix": [
     {
-      "Id": 1,
+      "id": 1,
       "ResourceName": "Srikanth Gopal",
       "System": "Settlement System",
       "Product": "FX",
@@ -365,7 +365,7 @@
       "SourceOfLastUpdatedProdutivity": "SMART Algorithm"
     },
     {
-      "Id": 2,
+      "id": 2,
       "ResourceName": "Rohit Verma",
       "System": "Collateral Management",
       "Product": null,
@@ -379,7 +379,7 @@
       "SourceOfLastUpdatedProdutivity": "SMART Algorithm with Manual Override"
     },
     {
-      "Id": 3,
+      "id": 3,
       "ResourceName": "Srikanth Gopal",
       "System": "Collateral Management",
       "Product": "Collateral",
@@ -393,7 +393,7 @@
       "SourceOfLastUpdatedProdutivity": "Manual"
     },
     {
-      "Id": 4,
+      "id": 4,
       "ResourceName": "Srikanth Gopal",
       "System": "Settlement System",
       "Product": "Cash EQ",
@@ -407,7 +407,7 @@
       "SourceOfLastUpdatedProdutivity": null
     },
     {
-      "Id": 5,
+      "id": 5,
       "ResourceName": "Rohit Verma",
       "System": "Settlement System",
       "Product": "Cash EQ",
@@ -423,7 +423,7 @@
   ],
   "Leave": [
     {
-      "Id": 1,
+      "id": 1,
       "ResourceName": "Vjesh Gopinath",
       "DateFrom": "15-Jun-22",
       "DateTo": "17-Jun-22",
@@ -431,7 +431,7 @@
       "Category": "Planned"
     },
     {
-      "Id": 2,
+      "id": 2,
       "ResourceName": "Mihir Vaidya",
       "DateFrom": "26-May-22",
       "DateTo": "26-May-22",
@@ -439,7 +439,7 @@
       "Category": "Ad-hoc"
     },
     {
-      "Id": 3,
+      "id": 3,
       "ResourceName": "Ravi Shah",
       "DateFrom": "18-Jul-22",
       "DateTo": "22-Jul-22",
@@ -447,10 +447,9 @@
       "Category": "Planned"
     }
   ],
-  "PredictionModule": [],
   "TaskLevelView": [
     {
-      "Id": 1,
+      "id": 1,
       "System": "Settlement System",
       "Product": "FX",
       "Subproduct": "JPY",
@@ -464,7 +463,7 @@
       "CompletionTime": null
     },
     {
-      "Id": 2,
+      "id": 2,
       "System": "Settlement System",
       "Product": "FX",
       "Subproduct": "JPY",
@@ -478,7 +477,7 @@
       "CompletionTime": null
     },
     {
-      "Id": 3,
+      "id": 3,
       "System": "Settlement System",
       "Product": "FX ",
       "Subproduct": "GBP",
@@ -492,7 +491,7 @@
       "CompletionTime": null
     },
     {
-      "Id": 4,
+      "id": 4,
       "System": "Collateral Management",
       "Product": "Collateral",
       "Subproduct": "NIP",
@@ -508,7 +507,7 @@
   ],
   "ResourceLevelView": [
     {
-      "Id": 1,
+      "id": 1,
       "ResourceName": "Srikanth Gopal",
       "System": "Gloss",
       "Product": "FX ",
@@ -518,7 +517,7 @@
       "AggregatedUtilization": 0.7
     },
     {
-      "Id": 2,
+      "id": 2,
       "ResourceName": "Srikanth Gopal",
       "System": "Crome",
       "Product": "Collateral",

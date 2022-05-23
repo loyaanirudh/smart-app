@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
+import { Button, ButtonGroup, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
 import { restHelper } from './_helper';
 
 
@@ -40,23 +40,28 @@ const AllocationModule = () => {
             )
         }
     )
-
-    const [isLoading, setIsLoading] = useState(false)
     const [showData, setShowData] = useState(false)
 
     const handleShow = () => {
-        setIsLoading(false)
         setShowData(true)
     };
 
     return (
         <Container fluid>
             <Row className="mt-2">
-                <Col md="10" />
-                <Col md="2">
-                    <Button className="float-end" variant="outline-primary" onClick={handleShow}>
-                        Trigger Allocation
-                    </Button>
+                <Col sm md="8" />
+                <Col sm md="4" >
+                    <ButtonGroup className='float-end'>
+                        <Button className='mx-2' variant="outline-primary" hidden={!showData}>
+                            Release
+                        </Button>
+                        <Button className='mx-2' variant="outline-primary" hidden={!showData}>
+                            Update Allocation
+                        </Button>
+                        <Button className='mx-2' variant="outline-primary" onClick={handleShow}>
+                            Trigger Allocation
+                        </Button>
+                    </ButtonGroup>
                 </Col>
             </Row>
             <Row className="mt-2">
@@ -83,16 +88,6 @@ const AllocationModule = () => {
                     </Table>
                 </Col>
             </Row>
-            {
-
-                isLoading && (
-                    <Row className='justify-content-center' >
-                        <Spinner animation="grow" />
-                        <Spinner animation="grow" />
-                        <Spinner animation="grow" />
-                    </Row>
-                )}
-
         </Container >
     )
 };

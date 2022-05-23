@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from './components/Home';
+import AllocationModule from './components/AllocationModule';
 import Leave from './components/Leave';
 import ResourceDefinition from './components/ResourceDefinition';
 import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
@@ -25,8 +25,8 @@ root.render(
       <Route path="resourceDefinition" element={<ResourceDefinition />} />
       <Route path="resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
       <Route path="leave" element={<Leave />} />
-      <Route path="home" element={<Home />} />
-      <Route path="" element={<Home />} />
+      <Route path="allocation" element={<AllocationModule />} />
+      <Route path="" element={<SystemMaster />} />
     </Routes>
   </HashRouter>
 );

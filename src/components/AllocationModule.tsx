@@ -3,7 +3,7 @@ import { Button, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
 import { restHelper } from './_helper';
 
 
-const Home = () => {
+const AllocationModule = () => {
 
     const endpointurl = 'TaskLevelView'
     const api = restHelper()
@@ -45,13 +45,8 @@ const Home = () => {
     const [showData, setShowData] = useState(false)
 
     const handleShow = () => {
-        setIsLoading(true)
-        setShowData(false)
-        setTimeout(function () {
-            setIsLoading(false)
-            setShowData(true)
-        }, 5000);
-
+        setIsLoading(false)
+        setShowData(true)
     };
 
     return (
@@ -102,4 +97,4 @@ const Home = () => {
     )
 };
 
-export default Home;
+export default AllocationModule;

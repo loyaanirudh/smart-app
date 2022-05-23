@@ -19,7 +19,7 @@
     "server": "json-server --watch db.json --port 5000",
     "dev": "concurrently \"npm start\" \"npm run server\"",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,8 +44,8 @@
   "devDependencies": {
     "concurrently": "^7.2.1",
     "json-server": "^0.17.0",
+    "nth-check": ">=2.1.1",
     "react-router-bootstrap": "^0.26.1",
-    "react-router-dom": "^6.3.0",
-    "nth-check": ">=2.1.1"
+    "react-router-dom": "^6.3.0"
   }
 }

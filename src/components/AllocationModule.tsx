@@ -21,10 +21,12 @@ const AllocationModule = () => {
             .catch(err => console.log(err))
     }
 
+    const [showAggregateData, setShowAggregateData] = useState(false)
+
     const DisplayData = data.map(
         (info: any) => {
             return (
-                <tr>
+                <tr onClick={() => { setShowAggregateData(true) }}>
                     <td>{info.System}</td>
                     <td>{info.Product}</td>
                     <td>{info.Subproduct}</td>
@@ -36,7 +38,7 @@ const AllocationModule = () => {
                     <td>{info.Timezone}</td>
                     <td>{info.AllocationTime}</td>
                     <td>{info.CompletionTime}</td>
-                </tr>
+                </tr >
             )
         }
     )
@@ -44,7 +46,9 @@ const AllocationModule = () => {
 
     const handleShow = () => {
         setShowData(true)
+        setShowAggregateData(false)
     };
+
 
     return (
         <Container fluid>
@@ -66,6 +70,7 @@ const AllocationModule = () => {
             </Row>
             <Row className="mt-2">
                 <Col xs md="12" >
+                    <h3 className='d-flex align-items-center justify-content-center text-center'>Task-Level View</h3>
                     <Table striped bordered hover>
                         <thead>
                             <tr>
@@ -84,6 +89,44 @@ const AllocationModule = () => {
                         </thead>
                         <tbody>
                             {showData && DisplayData}
+                        </tbody>
+                    </Table>
+                </Col>
+            </Row>
+
+            <Row className="mt-4" hidden={!showAggregateData}>
+                <Col xs md="12" >
+                    <h3 className='d-flex align-items-center justify-content-center text-center'>Resource View</h3>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                <th>Resource Name</th>
+                                <th>System</th>
+                                <th>Product</th>
+                                <th>Subproduct</th>
+                                <th>Task Type</th>
+                                <th>Count</th>
+                                <th>Aggregated Utilization %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Srikanth Gopal</td>
+                                <td>Gloss</td>
+                                <td>FX</td>
+                                <td>GBP</td>
+                                <td></td>
+                                <td>500</td>
+                                <td className='align-middle' rowSpan={2}>70</td>
+                            </tr>
+                            <tr>
+                                <td>Srikanth Gopal</td>
+                                <td>Crome</td>
+                                <td>Collateral</td>
+                                <td>NIP</td>
+                                <td>Demand Call</td>
+                                <td>5</td>
+                            </tr>
                         </tbody>
                     </Table>
                 </Col>

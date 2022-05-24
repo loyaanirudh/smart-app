@@ -5,6 +5,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import AllocationModule from './components/AllocationModule';
 import Dashboard from './components/Dashboard';
 import Leave from './components/Leave';
+import Prediction from './components/Prediction';
 import ResourceDefinition from './components/ResourceDefinition';
 import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
 import SuperAdmin from './components/SuperAdmin';
@@ -28,6 +29,7 @@ root.render(
       <Route path="resourceSkillsMatrix" element={<ResourceSkillsMatrix />} />
       <Route path="leave" element={<Leave />} />
       <Route path="allocation" element={<AllocationModule />} />
+      <Route path="prediction" element={<Prediction />} />
       <Route path="" element={<SystemMaster />} />
     </Routes>
   </HashRouter>

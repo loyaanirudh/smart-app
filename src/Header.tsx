@@ -14,7 +14,7 @@ function Header() {
           <Nav.Link href="/#/resourceSkillsMatrix">Resource Skills Matrix</Nav.Link>
           <Nav.Link href="/#/leave">Leave</Nav.Link>
           <Nav.Link href="/#/allocation">Allocation</Nav.Link>
-          <Nav.Link href="/#/">Prediction</Nav.Link>
+          <Nav.Link href="/#/prediction">Prediction</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

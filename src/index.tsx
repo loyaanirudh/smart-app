@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter, Route, Routes } from "react-router-dom";
 import AllocationModule from './components/AllocationModule';
+import Dashboard from './components/Dashboard';
 import Leave from './components/Leave';
 import ResourceDefinition from './components/ResourceDefinition';
 import ResourceSkillsMatrix from './components/ResourceSkillsMatrix';
@@ -19,6 +20,7 @@ root.render(
   <HashRouter>
     <Header />
     <Routes>
+      <Route path="dashboard" element={<Dashboard />} />
       <Route path="systemMaster" element={<SystemMaster />} />
       <Route path="superAdmin" element={<SuperAdmin />} />
       <Route path="taskDefinition" element={<TaskDefinition />} />
